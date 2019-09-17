@@ -35,7 +35,7 @@ import jp.wasabeef.recyclerview.animators.SlideInUpAnimator
 /**
  * Created by Wasabeef on 2015/01/03.
  */
-class AnimatorSampleActivity : AppCompatActivity() {
+class AnimatorSampleActivity : AppCompatActivity(R.layout.activity_animator_sample) {
 
   internal enum class Type(val animator: BaseItemAnimator) {
     FadeIn(FadeInAnimator()),
@@ -65,7 +65,6 @@ class AnimatorSampleActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_animator_sample)
 
     setSupportActionBar(findViewById(R.id.tool_bar))
     supportActionBar!!.setDisplayShowTitleEnabled(false)

@@ -9,7 +9,7 @@ import androidx.appcompat.widget.SwitchCompat
 /**
  * Created by Wasabeef on 2015/03/08.
  */
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
   companion object {
     const val KEY_GRID = "GRID"
@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
 
     findViewById<View>(R.id.btn_animator_sample).setOnClickListener {
       startActivity(Intent(this, AnimatorSampleActivity::class.java).apply {

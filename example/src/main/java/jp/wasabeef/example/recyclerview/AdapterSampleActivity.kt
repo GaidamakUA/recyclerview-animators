@@ -22,7 +22,7 @@ import jp.wasabeef.recyclerview.animators.FadeInAnimator
 /**
  * Created by Wasabeef on 2015/01/03.
  */
-class AdapterSampleActivity : AppCompatActivity() {
+class AdapterSampleActivity : AppCompatActivity(R.layout.activity_adapter_sample) {
 
   internal enum class Type {
     AlphaIn {
@@ -56,7 +56,6 @@ class AdapterSampleActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_adapter_sample)
 
     setSupportActionBar(findViewById(R.id.tool_bar))
     supportActionBar!!.setDisplayShowTitleEnabled(false)
